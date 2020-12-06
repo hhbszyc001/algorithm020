@@ -24,8 +24,8 @@
     	private int size;
 
     	public BSTMap() {
-        root = null;
-        size = 0;
+        	root = null;
+        	size = 0;
     	}
 
     	@Override
@@ -94,7 +94,6 @@
 
 	    //删除以node为根的二分搜索树中的最小元素，并返回删除节点后新的二分搜索树的根
 	    public Node removeMin(Node node){
-	
 	        if(node.left == null){
 	            Node rightNode = node.right;
 	            node.right = null;
@@ -140,5 +139,5 @@
 	            node.left = node.right = null;
 	            return successor;
 	        }
-	      }
-    	}
+	    }
+    }
